@@ -1,4 +1,3 @@
 Rock Paper Scissors +
 
-Factory Functions
-Modules
+Factory Functions / Modules
