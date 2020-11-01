@@ -13,6 +13,8 @@ body {
   font-size: 16px;
 }
 
+/*** Title Section ***/
+
 .title-container {
   text-align: center;
   margin: 2rem 0rem;
@@ -21,6 +23,8 @@ body {
 .title {
   font-size: 2rem;
 }
+
+/*** Options Section ***/
 
 .options-container {
   display: flex;
@@ -59,6 +63,8 @@ body {
   transform: scale(0.92);
 }
 
+/*** Score Section ***/
+
 .score-section {
   font-size: 1.5rem;
   margin: 3rem 0;
@@ -80,3 +86,5 @@ body {
   text-align: center;
   margin-left: 2rem;
 }
+
+/*** Selection Section ***/
