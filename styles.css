@@ -47,13 +47,16 @@ body {
   color: #ccc;
   background-color: #202020;
   border: 0.1rem solid #ccc;
-  transition: all 0.3s;
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
 }
 
 .start:hover {
   color: #202020;
   background-color: #ccc;
-  border: 0.1rem solid #202020;
+}
+
+.start:active {
+  transform: scale(0.92);
 }
 
 .score-section {
