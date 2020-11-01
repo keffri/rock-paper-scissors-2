@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   background-color: #202020;
   color: #ccc;
   font-size: 16px;
@@ -54,4 +54,26 @@ body {
   color: #202020;
   background-color: #ccc;
   border: 0.1rem solid #202020;
+}
+
+.score-section {
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.score-title {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.player-score {
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.computer-score {
+  text-align: center;
+  margin-left: 2rem;
 }
