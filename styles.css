@@ -113,3 +113,11 @@ body {
 .rps-btn:active {
   transform: scale(0.92);
 }
+
+/*** Results Section ***/
+
+.results-container {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
