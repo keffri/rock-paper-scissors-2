@@ -65,7 +65,7 @@ body {
 
 /*** Score Section ***/
 
-.score-section {
+.score-container {
   font-size: 1.5rem;
   margin: 3rem 0;
   display: flex;
@@ -88,3 +88,27 @@ body {
 }
 
 /*** Selection Section ***/
+
+.selection-container {
+  margin: auto;
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rps-btn {
+  padding: 0.5rem 2rem;
+  color: #ccc;
+  background-color: #202020;
+  border: 0.1rem solid #ccc;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.rps-btn:hover {
+  color: #202020;
+  background-color: #ccc;
+}
+
+.rps-btn:active {
+  transform: scale(0.92);
+}
