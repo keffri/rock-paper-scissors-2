@@ -21,3 +21,37 @@ body {
 .title {
   font-size: 2rem;
 }
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  padding: 0.2rem;
+  margin: 2rem 0;
+  color: #ccc;
+  background-color: #202020;
+  border: 0.1rem solid #ccc;
+}
+
+.name::placeholder {
+  color: #ccc;
+}
+
+.start {
+  padding: 0.1rem 1rem;
+  border-radius: 0;
+  color: #ccc;
+  background-color: #202020;
+  border: 0.1rem solid #ccc;
+  transition: all 0.3s;
+}
+
+.start:hover {
+  color: #202020;
+  background-color: #ccc;
+  border: 0.1rem solid #202020;
+}
