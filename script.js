@@ -30,3 +30,13 @@ const gameStart = (() => {
     }
   });
 })();
+
+const gameFunction = (() => {
+  const choices = ["Rock", "Paper", "Scissors"];
+  let computerChoice = () => {
+    let randomNumber = Math.floor(Math.random() * 3);
+    return choices[randomNumber];
+  };
+
+  return { computerChoice };
+})();
