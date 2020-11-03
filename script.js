@@ -1,6 +1,9 @@
 let startButton = document.querySelector(".start");
 let options = document.querySelector(".options-container");
 let game = document.querySelector(".game-container");
+const rockButton = document.querySelector(".rock");
+const paperButton = document.querySelector(".paper");
+const scissorsButton = document.querySelector(".scissors");
 
 const playerCreation = () => {
   let playerName = document.querySelector(".name").value;
