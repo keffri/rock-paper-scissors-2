@@ -1,33 +1,35 @@
-let startButton = document.querySelector(".start");
-let options = document.querySelector(".options-container");
-let game = document.querySelector(".game-container");
-const rockButton = document.querySelector(".rock");
-const paperButton = document.querySelector(".paper");
-const scissorsButton = document.querySelector(".scissors");
-let resultsText = document.querySelector(".results");
-
-const playerCreation = () => {
-  let playerName = document.querySelector(".name").value;
-  return { playerName };
-};
-
-const gameStart = (() => {
+const rps = (() => {
+  let startButton = document.querySelector(".start");
+  let options = document.querySelector(".options-container");
+  let game = document.querySelector(".game-container");
+  const rockButton = document.querySelector(".rock");
+  const paperButton = document.querySelector(".paper");
+  const scissorsButton = document.querySelector(".scissors");
+  let resultsText = document.querySelector(".results");
+  let playerName;
   let player;
+  let playerChoice;
+
   createPlayer = () => {
+    const playerCreation = () => {
+      playerName = document.querySelector(".name").value;
+      return { playerName };
+    };
     player = playerCreation();
     if (player.playerName === "") {
       alert("Please enter a name.");
       return;
     }
+    playersName = player.playerName;
     options.removeChild(options.firstElementChild);
     options.removeChild(options.firstElementChild);
     game.style.visibility = "visible";
     let playerTitle = document.querySelector(".player");
     playerTitle.textContent = player.playerName;
-    return { player };
+    return { playersName };
   };
 
-  startButton.addEventListener("click", createPlayer);
+  let playersName = startButton.addEventListener("click", createPlayer);
   document.addEventListener("keypress", (e) => {
     let key = e.key;
     if (key === "Enter") {
@@ -41,7 +43,6 @@ const gameStart = (() => {
     return choices[randomNumber];
   };
 
-  let playerChoice;
   rockButton.addEventListener("click", () => {
     let computerPick = computerChoice();
     playerChoice = "ROCK";
@@ -77,6 +78,4 @@ const gameStart = (() => {
       resultsText.textContent = `Draw! Both players selected ${playerChoice}.`;
     }
   });
-
-  return { computerChoice };
 })();
